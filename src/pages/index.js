@@ -49,13 +49,13 @@ export default function Home() {
           <div id="logo" onClick={() => {
 
           }}>
-            <Image src="/assets/calendify.png" height={40} width={40} />
+            <Image src="/assets/calendify.png" height={40} width={40} alt="calendifyimage" />
             <div>Calendify</div>
           </div>
           <DropdownMenu.Root >
             <DropdownMenu.Trigger id={styles.back}>
               <div id="menu">
-                <img src="/assets/menu.png" alt="menu-icon" height={20} />
+                <Image src="/assets/menu.png" alt="menu-icon" height={20} />
               </div>
             </DropdownMenu.Trigger>
             <DropdownMenu.Content id={styles.dropBack}>
@@ -83,10 +83,10 @@ export default function Home() {
             <p>Doing the logic building for displaying the calendar again and again is <span className='boldify'>waste of time</span> and using paid service calendars, increases the size of your websites</p>
 
             <br />
-            <p>Hence I did the <span className='boldify'>logic building</span> for you, Now it's your time to beautify it!</p>
+            <p>Hence I did the <span className='boldify'>logic building</span> for you, Now it&apos;s your time to beautify it!</p>
 
             <Link href='https://www.npmjs.com/package/calendify'>
-              <div id={styles.cta} >Let's go!</div>
+              <div id={styles.cta} >Let&apos;s go!</div>
             </Link>
           </article>
           <iframe src="https://embed.lottiefiles.com/animation/99012"></iframe>
@@ -98,7 +98,7 @@ export default function Home() {
           </div>
           <div className={styles.maincontainer}>
             <div> This package returns an <span className='code small'>Object</span> containing everything you need to make a functional dynamic calendar ✨</div>
-            <div className={styles.smallHeadings}>Here's a sample output:</div>
+            <div className={styles.smallHeadings}>Here&apos;s a sample output:</div>
             <Image id="code" src='/assets/code.svg' height={850} width={600} alt='code-snippet' />
 
           </div>
@@ -267,7 +267,7 @@ export default function Home() {
       </main>
       <footer>
         <div id="FootLeft">
-          <Image src='/assets/calendify.png' height={50} width={50} />
+          <Image src='/assets/calendify.png' height={50} width={50} alt="calendify-logo" />
           <div id={styles.footHead}>Calendify</div>
           <div id={styles.footDetails}>Dynamic Calendars made easy ✨</div>
           <div id={styles.footDetails}>&copy; 2023</div>
