@@ -3,6 +3,11 @@
   src: url('/assets/variable.ttf');
 }
 
+@font-face {
+  font-family: 'bold';
+  src: url('/assets/bold.ttf');
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -203,6 +208,11 @@ section {
   background-color: rgb(255, 255, 255);
   border-radius: 0.2rem;
   color: blueviolet;
+}
+
+button {
+  border: none;
+  outline: none
 }
 
 footer {
