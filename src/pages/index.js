@@ -40,6 +40,7 @@ export default function Home() {
         <meta name="description" content="Demo for the Caledify package, make simple lightweight dynamic calendars, with ease" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name='author' content='Diptanhu Mahish' />
+        <meta name="theme-color" content="#8A2BE2" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
         <link rel="icon" href="/favicon.ico" />
