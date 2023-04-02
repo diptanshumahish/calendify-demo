@@ -55,7 +55,7 @@ export default function Home() {
           <DropdownMenu.Root >
             <DropdownMenu.Trigger id={styles.back}>
               <div id="menu">
-                <Image src="/assets/menu.png" alt="menu-icon" height={20} />
+                <Image src="/assets/menu.png" alt="menu-icon" height={20} width={20} />
               </div>
             </DropdownMenu.Trigger>
             <DropdownMenu.Content id={styles.dropBack}>
