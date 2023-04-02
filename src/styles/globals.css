@@ -210,6 +210,11 @@ section {
   color: blueviolet;
 }
 
+.clickable:active {
+  background-color: blueviolet;
+  color: white;
+}
+
 button {
   border: none;
   outline: none
