@@ -61,7 +61,7 @@ export default function Home() {
         <meta property="og:url" content="https://calendify-demo.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Calendify Demo" />
-        <meta property="og:description" content="The official demo site for calendify package" />
+        <meta property="og:description" content="The official demo site for calendify package.Dynamic Calendars made easy." />
         <meta property="og:image" content="https://calendify-demo.vercel.app/assets/banner.png" />
 
         {/* favcicon  */}
