@@ -42,7 +42,6 @@ export default function Home() {
         <meta name='author' content='Diptanhu Mahish' />
         <meta name="theme-color" content="#8A2BE2" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
@@ -227,7 +226,9 @@ export default function Home() {
               </div>
             </div>
 
+
           </div>
+          //click on prev and next to change the calendar
           <div className='spacer'></div>
 
           <div className={styles.headings} id="#scroll">
