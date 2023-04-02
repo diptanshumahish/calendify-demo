@@ -194,6 +194,16 @@ section {
   border-radius: 0 0 0.5rem 0.5rem;
 }
 
+#switch {
+  background-color: blueviolet;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-align: center;
+}
+
 .clickable {
   cursor: pointer;
   background-color: blueviolet;

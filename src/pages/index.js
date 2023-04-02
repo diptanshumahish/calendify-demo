@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import Calendify from 'calendify'
+import Calendify, { getCalendar } from 'calendify'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
@@ -42,6 +42,20 @@ export default function Home() {
         <meta name='author' content='Diptanhu Mahish' />
         <meta name="theme-color" content="#8A2BE2" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        {/* og tags  */}
+        <meta
+          property="og:image"
+          content="https://calendify-demo.vercel.app/assets/banner.png" />
+        <meta
+          property="og:description"
+          content="The official demo site for calendify package" />
+        <meta property="og:title" content="Calendify Demo" />
+        <meta name='og:image:alt' content="calendify logo" />
+
+        <meta name="twitter:title" content="Calendify Demo" />
+        <meta name='twitter:creator' content='@diptanshumahis5' />
+
+        {/* favcicon  */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
@@ -187,7 +201,7 @@ export default function Home() {
                     if (ele.type === 'previousMonth') {
                       return (
                         <>
-                          <div className='inactive weekDay'>
+                          <div className='inactive weekDay' key={index}>
                             {ele.date}
                           </div>
                         </>
@@ -197,7 +211,7 @@ export default function Home() {
                       if (ele.date === day && month === constMonth && year == constYear) {
                         return (
                           <>
-                            <div className='active weekDay today'>
+                            <div className='active weekDay today' key={index}>
                               {ele.date}
                             </div>
                           </>
@@ -205,7 +219,7 @@ export default function Home() {
                       } else {
                         return (
                           <>
-                            <div className='active weekDay'>
+                            <div className='active weekDay' key={index}>
                               {ele.date}
                             </div>
                           </>
@@ -215,7 +229,7 @@ export default function Home() {
                     if (ele.type === 'nextMonth') {
                       return (
                         <>
-                          <div className='inactive weekDay'>
+                          <div className='inactive weekDay' key={index}>
                             {ele.date}
                           </div>
                         </>
@@ -223,6 +237,19 @@ export default function Home() {
                     }
                   })}
                 </div>
+                {
+                  (constMonth !== month) && (
+                    <div id="switch" onClick={() => {
+                      var constants = Calendify.getCurrenStatus();
+                      var temp = Calendify.getCalendar(constants.month, constants.year);
+                      setDates(temp.days);
+                      setMonth(temp.month);
+                      setYear(temp.year);
+                      setDay(temp.today);
+                      setToday(temp.day);
+                    }}>Switch back to current month</div>
+                  )
+                }
               </div>
             </div>
 
