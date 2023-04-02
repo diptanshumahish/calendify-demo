@@ -37,7 +37,7 @@ export default function Home() {
       <Head>
         <title>Calendify Demo</title>
         <meta name="keywords" content="Calendify, calendify, calendify-demo, diptanshumahish" />
-        <meta name="description" content="Demo for the Caledify package, make simple lightweight dynamic calendars, with ease" />
+        <meta name="description" content="The official demo site for calendify package. Dynamic Calendars made easy." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name='author' content='Diptanhu Mahish' />
         <meta name="theme-color" content="#8A2BE2" />
@@ -46,14 +46,23 @@ export default function Home() {
         <meta
           property="og:image"
           content="https://calendify-demo.vercel.app/assets/banner.png" />
-        <meta
-          property="og:description"
-          content="The official demo site for calendify package" />
-        <meta property="og:title" content="Calendify Demo" />
         <meta name='og:image:alt' content="calendify logo" />
 
+        {/* twitter meta  */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="calendify-demo.vercel.app" />
+        <meta property="twitter:url" content="https://calendify-demo.vercel.app/" />
         <meta name="twitter:title" content="Calendify Demo" />
-        <meta name='twitter:creator' content='@diptanshumahis5' />
+        <meta name="twitter:description" content="The official demo site for calendify package. Dynamic Calendars made easy." />
+        <meta name="twitter:image" content="https://calendify-demo.vercel.app/assets/banner.png" />
+
+
+        {/* facebook meta tags  */}
+        <meta property="og:url" content="https://calendify-demo.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Calendify Demo" />
+        <meta property="og:description" content="The official demo site for calendify package" />
+        <meta property="og:image" content="https://calendify-demo.vercel.app/assets/banner.png" />
 
         {/* favcicon  */}
         <link rel="icon" href="/favicon.ico" />
