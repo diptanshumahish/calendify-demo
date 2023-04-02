@@ -228,7 +228,7 @@ export default function Home() {
 
 
           </div>
-          //click on prev and next to change the calendar
+          click on prev and next to change the calendar
           <div className='spacer'></div>
 
           <div className={styles.headings} id="#scroll">
